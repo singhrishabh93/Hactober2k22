@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Web Form </title>
+		<style>
+			.right
+			{
+				text-align: right;
+				font-weight: 700;
+			}
+			.bottom
+			{
+				text-align: center;
+				background-color: #ADD8E6;
+			}
+			table
+			{
+				border-collapse: collapse;
+			}
+			td
+			{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<table>
+				<colgroup>
+					<col style="width: 150px" />
+				</colgroup>
+				<tfoot>
+					<tr>
+						<td class="bottom" colspan="4">
+							<input type="submit" value="Submit" />
+							<input type="reset" value="Clear This Form" />
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td class="right">
+							<label for="last-name">Last Name</label>
+						</td>
+						<td colspan="3">
+							<input type="text" id="last-name" size="42" value="Nakov" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="first-name">First Name</label>
+						</td>
+						<td colspan="3">
+							<input type="text" id="first-name" size="42" value="Svetlin" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="address">Address</label>
+						</td>
+						<td colspan="3">
+							<textarea id="address" cols="31">17 Hristo Botev Str. floor 3, apt 12</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="city">City</label>
+						</td>
+						<td>
+							<input type="text" id="city" size="26" value="Kaspichan" />
+						</td>
+						<td class="right">
+							<label for="state"> State</label>
+						</td>
+						<td>
+							<input type="text" size="4" id="state" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="zip">Zip/Postal Code</label>
+						</td>
+						<td colspan="3">
+							<input type="text" id="zip" size="10" value="9325" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="country">Country</label>
+						</td>
+						<td colspan="3">
+							<select id="country">
+								<option value="Bulgaria" selected="selected">Bulgaria</option>
+								<option value="France">Australia</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="phone">Phone (country code, area code, number)</label>
+						</td>
+						<td colspan="3">
+							(+<input type="text" id="phone1" size="5" value="359" />)
+							<input type="text" id="phone2" size="5" value="88" />-
+							<input type="text" id="phone3" size="10" value="8334343" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="email">E-mail</label>
+						</td>
+						<td colspan="3">
+							<input type="text" id="email" size="36" value="nakov@kaspichan.org" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="month">Birth date</label>
+						</td>
+						<td colspan="3">
+							Month<input type="text" id="month" size="2" value="06" /> 
+							Day<input type="text" id="day" size="2" value="14" /> 
+							Year(4 digit)<input type="text" id="year" size="4" value="1980" />
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="gender">Gender</label>
+						</td>
+						<td colspan="3">
+							<select id="gender">
+								<option value="Male" selected="selected">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="spring">Starting date</label>
+						</td>
+						<td colspan="3">
+							<input type="radio" name="sd" id="spring" value="Spring 2006" checked="checked" />
+							<label for="sp">Spring 2006</label>
+							<input type="radio" name="sd" id="summer" value="Summer 2006" />
+							<label for="su">Summer 2006</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="right">
+							<label for="comments">Comments/Questions</label>
+						</td>
+						<td colspan="3">
+							<textarea id="comments" cols="31">Please, send me more information about the lodging.</textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
